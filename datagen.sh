@@ -1,6 +1,6 @@
 
 
-python run.py \
+python ./run.py \
 		--generate_data=True \
 		--data_dir=../data \
 		--tmp_dir=../data/tmp-data \
