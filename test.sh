@@ -1,7 +1,7 @@
 
 export CUDA_VISIBLE_DEVICES=3
 
-python run.py \
+python2 run.py \
 		--gpu_mem_fraction=0.98 \
 		--hparams='' \
 		--data_dir=/data/lzhou/t2t/interactive-decoding/c2e/data-trans \
