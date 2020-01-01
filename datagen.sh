@@ -13,7 +13,7 @@
 #		--num_shards=50
 #		# 2m.bpe.unk.en
 #
-python run.py \
+python2 run.py \
 		--generate_data=True \
 		--data_dir=./data-sb \
 		--tmp_dir=/data/lzhou/t2t/interactive-decoding/c2e/data-trans \
