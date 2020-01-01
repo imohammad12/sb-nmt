@@ -22,8 +22,8 @@ from six.moves import zip  # pylint: disable=redefined-builtin
 import os
 
 import sys
-importlib.reload(sys)
-# sys.setdefaultencoding("utf-8")
+reload(sys)
+sys.setdefaultencoding("utf-8")
 import tensorflow as tf
 
 #from models import common_hparams
