@@ -10,7 +10,8 @@ python2 run.py \
 		--vocab_tgt_size=32000 \
 		--vocab_src_name=vocab.50K.de \
 		--vocab_tgt_name=vocab.50K.en \
-		--num_shards=50
+		--num_shards=50 \
+		--hparams_set=transformer_params_base
 		# 2m.bpe.unk.en
 #
 #python2 run.py \
