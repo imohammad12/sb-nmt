@@ -8,6 +8,7 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+import importlib
 
 from collections import defaultdict
 
@@ -21,8 +22,8 @@ from six.moves import zip  # pylint: disable=redefined-builtin
 import os
 
 import sys
-reload(sys)
-sys.setdefaultencoding("utf-8")
+importlib.reload(sys)
+# sys.setdefaultencoding("utf-8")
 import tensorflow as tf
 
 #from models import common_hparams
