@@ -1,7 +1,7 @@
 
 
 python2 run.py \
-		--generate_data=False \
+		--generate_data=True \
 		--data_dir=../data \
 		--tmp_dir=../data/tmp-data \
 		--train_src_name=train.tok.clean.bpe.32000.de \
