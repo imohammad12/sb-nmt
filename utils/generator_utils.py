@@ -22,6 +22,7 @@ EOS = 1
 L2R = 2
 R2L = 3
 
+
 def token_generator_three(source_path, target_path_l2r, target_path_r2l, token_vocab_src, token_vocab_tgt, eos=None):
     """Generator for sequence-to-sequence tasks that uses tokens.
     """
@@ -39,10 +40,10 @@ def token_generator_three(source_path, target_path_l2r, target_path_r2l, token_v
         
                     t_l2r = token_vocab_tgt.encode(target_l2r.strip())
                     t_r2l = token_vocab_tgt.encode(target_r2l.strip())
-                    t_length_max = max(len(t_l2r),len(t_r2l))
+                    t_length_max = max(len(t_l2r), len(t_r2l))
                     t_l2r_add_len = t_length_max - len(t_l2r)
                     t_r2l_add_len = t_length_max - len(t_r2l)
-                    ## let len(target_ints_l2r)==len(target_ints_r2l)
+                    # let len(target_ints_l2r)==len(target_ints_r2l)
                     target_ints_l2r = l2r_list + t_l2r + t_l2r_add_len*pad_list + eos_list
                     target_ints_r2l = r2l_list + t_r2l + t_r2l_add_len*pad_list + eos_list
 
