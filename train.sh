@@ -1,7 +1,7 @@
 
 export CUDA_VISIBLE_DEVICES=3
 
-nohup python run.py  \
+nohup python2 run.py  \
 		--worker_gpu=1 \
 		--gpu_mem_fraction=0.9 \
 		--hparams='batch_size=2048'  \
