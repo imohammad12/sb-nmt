@@ -5,11 +5,11 @@ nohup python run.py  \
 		--worker_gpu=1 \
 		--gpu_mem_fraction=0.9 \
 		--hparams='batch_size=2048'  \
-		--data_dir=/data/lzhou/t2t/interactive-decoding/c2e/data-trans  \
-		--vocab_src_size=30720  \
-		--vocab_tgt_size=30720  \
-		--vocab_src_name=vocab.bpe.zh \
-		--vocab_tgt_name=vocab.bpe.en \
+		--data_dir=/content/gdrive/My\ Drive/sb-nmt/data \
+		--vocab_src_size=32000  \
+		--vocab_tgt_size=32000  \
+		--vocab_src_name=vocab.bpe.32000 \
+		--vocab_tgt_name=vocab.bpe.32000 \
 		--hparams_set=transformer_params_big  \
 		--train_steps=200000  \
 		--keep_checkpoint_max=2  \
