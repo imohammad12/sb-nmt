@@ -240,8 +240,8 @@ def hparams_to_batching_scheme(hparams,
 def get_datasets(data_dir, mode):
     """Return the location of a dataset for a given mode."""
     datasets = []
-    #for problem in ["translation",]:
-    for problem in ["wmt_ende_bpe32k",]:
+    for problem in ["translation",]:
+    # for problem in ["wmt_ende_bpe32k",]:
         #problem, _, _ = common_hparams.parse_problem_name(problem)
         path = os.path.join(data_dir, problem)
         if mode == tf.contrib.learn.ModeKeys.TRAIN:
